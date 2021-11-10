@@ -13,19 +13,31 @@
 
 	<body>
 		<header>
+		  <div class="container"></div>
 			<h1>World Database Lookup</h1>
+		  </div>
 		</header>
-
+        <br>
 		<main>
-			<div id="controls">
-				<label for="country">Country:</label>
-				<input id="country" type="search" name="country" placeholder="Enter country name" />
-				<button id="lookup">Lookup</button>
-			</div>
+			<section class="search-space">
+				<div class="container">
+					<div id="controls">
+						<form name="form" action"#" method="GET" class = "example">
+							
+							<input id="country" type="search" name="country" placeholder="Enter country name" />
+							<button id="cntry">Lookup Country</button>
+							<button id="city">Lookup Cities</button>
+						</form>
+					</div>
+					<hr>
+					<label for="country">Country:</label>
+					<div id="result">
+						<!-- countries will appear here -->
+					</div>
+				</div>
+			</section>
 			
-			<div id="result">
-				<!-- countries will appear here -->
-			</div>
+		
 		</main>
 
 	</body>
